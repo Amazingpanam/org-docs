@@ -6,12 +6,6 @@ module.exports = {
       label: 'Cloud',
       items: ['cloud/azure-basics'],
     },
-  ],
-};
-module.exports = {
-  tutorialSidebar: [
-    'intro',
-
     {
       type: 'category',
       label: 'Onboarding',
@@ -20,7 +14,6 @@ module.exports = {
         'onboarding/vpn-access',
       ],
     },
-
     {
       type: 'category',
       label: 'DevOps',
@@ -28,10 +21,9 @@ module.exports = {
         'devops/ci-cd',
         'devops/terraform',
         'devops/docker',
-	'devops/kubernetes',
+        'devops/kubernetes',
       ],
     },
-	  
     {
       type: 'category',
       label: 'Security',
@@ -43,3 +35,4 @@ module.exports = {
     },
   ],
 };
+
