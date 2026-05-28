@@ -1,0 +1,36 @@
+# Kubernetes Documentation
+
+## Overview
+Kubernetes (K8s) is an open-source container orchestration platform designed to automate deploying, scaling, and managing containerized applications.
+
+## Key Concepts
+
+### 1. **Cluster**
+A set of nodes (machines) that run containerized applications.
+
+### 2. **Node**
+A single machine in a Kubernetes cluster, which can be a physical or virtual machine.
+
+### 3. **Pod**
+The smallest deployable unit in Kubernetes, which can contain one or more containers.
+
+### 4. **Deployment**
+A controller that manages the deployment of applications, ensuring the desired number of replicas are running.
+
+### 5. **Service**
+An abstraction that defines a logical set of Pods and a policy to access them, enabling communication between different parts of an application.
+
+## Basic Commands
+
+- **kubectl get pods**: List all pods in the current namespace.
+- **kubectl create -f <file.yaml>**: Create resources defined in the specified YAML file.
+- **kubectl apply -f <file.yaml>**: Apply changes to resources defined in the YAML file.
+- **kubectl delete pod <pod-name>**: Delete a specific pod.
+
+## Resources
+- [Kubernetes Official Documentation](https://kubernetes.io/docs/)
+- [Kubernetes GitHub Repository](https://github.com/kubernetes/kubernetes)
+
+## Conclusion
+Kubernetes simplifies the management of containerized applications, providing powerful features for scaling, monitoring, and maintaining application health.
+

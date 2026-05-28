@@ -28,9 +28,10 @@ module.exports = {
         'devops/ci-cd',
         'devops/terraform',
         'devops/docker',
+	'devops/kubernetes',
       ],
     },
-
+	  
     {
       type: 'category',
       label: 'Security',
