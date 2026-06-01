@@ -209,17 +209,13 @@ const styles = {
   },
 
   tag: {
-    display: 'inline-block',
-    marginTop: '1rem',
-    fontSize: '0.75rem',
-    padding: '4px 8px',
-    borderRadius: '10px',
-    background: '#f3f4f6',
-  },
-
-  footer: {
-    marginTop: '4rem',
-    fontSize: '0.85rem',
-    opacity: 0.7,
-  },
-};
+  display: 'inline-block',
+  marginTop: '1rem',
+  fontSize: '0.75rem',
+  padding: '5px 10px',
+  borderRadius: '999px',
+  background: 'rgba(34, 197, 94, 0.15)',
+  color: '#86efac',
+  border: '1px solid rgba(34, 197, 94, 0.35)',
+  fontWeight: 500,
+},;
