@@ -45,25 +45,77 @@ export default function Home() {
         {/* DASHBOARD CARDS */}
         <section style={styles.grid}>
 
-          <Link style={styles.card} to="/docs/cloud/azure-basics">
+          <Link
+            style={styles.card}
+            to="/docs/cloud/azure-basics"
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-6px)';
+              e.currentTarget.style.boxShadow = '0 0 25px rgba(34, 197, 94, 0.35)';
+              e.currentTarget.style.borderColor = '#22c55e';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0)';
+              e.currentTarget.style.boxShadow = 'none';
+              e.currentTarget.style.borderColor = 'rgba(34, 197, 94, 0.35)';
+            }}
+          >
             <h3>☁ Cloud Engineering</h3>
             <p>Azure services, architecture patterns, and cloud fundamentals.</p>
             <span style={styles.tag}>Azure • AWS</span>
           </Link>
 
-          <Link style={styles.card} to="/docs/devops/ci-cd">
+          <Link
+            style={styles.card}
+            to="/docs/devops/ci-cd"
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-6px)';
+              e.currentTarget.style.boxShadow = '0 0 25px rgba(34, 197, 94, 0.35)';
+              e.currentTarget.style.borderColor = '#22c55e';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0)';
+              e.currentTarget.style.boxShadow = 'none';
+              e.currentTarget.style.borderColor = 'rgba(34, 197, 94, 0.35)';
+            }}
+          >
             <h3>⚙ DevOps & Automation</h3>
             <p>CI/CD pipelines, Docker, Kubernetes, Terraform, and IaC workflows.</p>
             <span style={styles.tag}>CI/CD • GitHub Actions</span>
           </Link>
 
-          <Link style={styles.card} to="/docs/onboarding/new-staff">
+          <Link
+            style={styles.card}
+            to="/docs/onboarding/new-staff"
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-6px)';
+              e.currentTarget.style.boxShadow = '0 0 25px rgba(34, 197, 94, 0.35)';
+              e.currentTarget.style.borderColor = '#22c55e';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0)';
+              e.currentTarget.style.boxShadow = 'none';
+              e.currentTarget.style.borderColor = 'rgba(34, 197, 94, 0.35)';
+            }}
+          >
             <h3>👥 Onboarding</h3>
             <p>Standardized setup guides for new engineers and internal systems.</p>
             <span style={styles.tag}>Processes</span>
           </Link>
 
-          <Link style={styles.card} to="/docs/security/access-control">
+          <Link
+            style={styles.card}
+            to="/docs/security/access-control"
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-6px)';
+              e.currentTarget.style.boxShadow = '0 0 25px rgba(34, 197, 94, 0.35)';
+              e.currentTarget.style.borderColor = '#22c55e';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0)';
+              e.currentTarget.style.boxShadow = 'none';
+              e.currentTarget.style.borderColor = 'rgba(34, 197, 94, 0.35)';
+            }}
+          >
             <h3>🔐 Security & Compliance</h3>
             <p>Access control, policies, backup strategies, and incident response.</p>
             <span style={styles.tag}>Zero Trust</span>
@@ -149,11 +201,11 @@ const styles = {
     textAlign: 'left',
     padding: '1.5rem',
     borderRadius: '14px',
-    border: '1px solid #e5e7eb',
+    border: '1px solid rgba(34, 197, 94, 0.35)',
     textDecoration: 'none',
-    color: 'inherit',
+    color: '#eaffea',
+    background: 'linear-gradient(135deg, #052e1b, #0b3d2e)',
     transition: 'all 0.25s ease',
-    background: '#fff',
   },
 
   tag: {
