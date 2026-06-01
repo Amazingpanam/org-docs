@@ -27,7 +27,7 @@ export default function Home() {
               Get Started
             </Link>
 
-            <Link className="button button--secondary button--lg" to="/docs">
+            <Link className="button button--secondary button--lg" to="/docs/intro">
               Explore Docs
             </Link>
           </div>
