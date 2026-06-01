@@ -3,7 +3,7 @@ module.exports = {
     'intro',
     {
       type: 'category',
-      label: 'Cloud',
+      label: 'cloud',
       items: ['cloud/azure-basics'],
     },
     {
