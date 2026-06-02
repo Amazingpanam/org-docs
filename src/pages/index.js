@@ -1,3 +1,68 @@
+import React from 'react';
+import Layout from '@theme/Layout';
+import Link from '@docusaurus/Link';
+
+export default function Home() {
+  return (
+    <Layout
+      title="Internal Documentation Portal"
+      description="Enterprise-grade knowledge base for Cloud, DevOps, Security, and Onboarding"
+    >
+      <main style={styles.page}>
+        <section style={styles.hero}>
+          <div style={styles.badge}>
+            Enterprise Documentation System
+          </div>
+
+          <h1 style={styles.title}>
+            Cloud & DevOps Knowledge Hub
+          </h1>
+
+          <p style={styles.subtitle}>
+            A centralized knowledge base for cloud infrastructure,
+            DevOps processes, onboarding, and security operations.
+          </p>
+
+          <div style={styles.cta}>
+            <Link
+              className="button button--primary button--lg"
+              to="/docs/intro"
+            >
+              Get Started
+            </Link>
+          </div>
+        </section>
+
+        <section style={styles.grid}>
+          <Link style={styles.card} to="/docs/cloud/azure-basics">
+            <h3>☁ Cloud Engineering</h3>
+            <p>Azure services, architecture patterns, and cloud fundamentals.</p>
+            <span style={styles.tag}>Azure • AWS</span>
+          </Link>
+
+          <Link style={styles.card} to="/docs/devops/ci-cd">
+            <h3>⚙ DevOps & Automation</h3>
+            <p>CI/CD pipelines, Docker, Kubernetes, and Terraform.</p>
+            <span style={styles.tag}>CI/CD • GitHub Actions</span>
+          </Link>
+
+          <Link style={styles.card} to="/docs/onboarding/new-staff">
+            <h3>👥 Onboarding</h3>
+            <p>Guides and processes for new team members.</p>
+            <span style={styles.tag}>Processes</span>
+          </Link>
+
+          <Link style={styles.card} to="/docs/security/access-control">
+            <h3>🔐 Security & Compliance</h3>
+            <p>Access control, backup policies, and incident response.</p>
+            <span style={styles.tag}>Zero Trust</span>
+          </Link>
+        </section>
+      </main>
+    </Layout>
+  );
+}
+
 const styles = {
   page: {
     maxWidth: '1200px',
@@ -37,19 +102,8 @@ const styles = {
 
   cta: {
     display: 'flex',
-    gap: '1rem',
     justifyContent: 'center',
-    flexWrap: 'wrap',
-    marginBottom: '1.5rem',
-  },
-
-  meta: {
-    display: 'flex',
-    justifyContent: 'center',
-    gap: '1.5rem',
-    fontSize: '0.9rem',
-    opacity: 0.75,
-    flexWrap: 'wrap',
+    marginBottom: '2rem',
   },
 
   grid: {
