@@ -80,8 +80,8 @@ const styles = {
     padding: '6px 12px',
     fontSize: '0.8rem',
     borderRadius: '20px',
-    background: '#eef2ff',
-    color: '#3730a3',
+    background: '#e0f2fe',  // Light blue background
+    color: '#0369a1',       // Darker blue text
     marginBottom: '1rem',
     fontWeight: 600,
   },
@@ -117,10 +117,10 @@ const styles = {
     textAlign: 'left',
     padding: '1.5rem',
     borderRadius: '14px',
-    border: '1px solid rgba(34, 197, 94, 0.35)',
+    border: '1px solid rgba(59, 130, 246, 0.35)',     // Blue border
     textDecoration: 'none',
-    color: '#eaffea',
-    background: 'linear-gradient(135deg, #052e1b, #0b3d2e)',
+    color: '#e0f2fe',                                  // Light blue text
+    background: 'linear-gradient(135deg, #0c2b4f, #1e3a6b)', // Blue gradient
     transition: 'all 0.25s ease',
   },
 
@@ -130,9 +130,9 @@ const styles = {
     fontSize: '0.75rem',
     padding: '5px 10px',
     borderRadius: '999px',
-    background: 'rgba(34, 197, 94, 0.15)',
-    color: '#86efac',
-    border: '1px solid rgba(34, 197, 94, 0.35)',
+    background: 'rgba(59, 130, 246, 0.15)',           // Blue background
+    color: '#7ab7f0',                                 // Light blue text
+    border: '1px solid rgba(59, 130, 246, 0.35)',     // Blue border
     fontWeight: 500,
   },
 };
