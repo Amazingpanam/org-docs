@@ -7,6 +7,7 @@ module.exports = {
       items: [
 	    'cloud/azure-basics',
       	    'cloud/cloud-computing',
+	      'cloud/Github',
       ],
     },
     {
