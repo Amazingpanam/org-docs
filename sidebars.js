@@ -4,7 +4,10 @@ module.exports = {
     {
       type: 'category',
       label: 'cloud',
-      items: ['cloud/azure-basics'],
+      items: [
+	    'cloud/azure-basics',
+      	    'cloud/cloud-computing',
+      ],
     },
     {
       type: 'category',
